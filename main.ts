@@ -1,2 +1,6 @@
+import { Server } from "./src/molesland.ts";
 
-console.log('hello world')
+(()=>{
+  const server = new Server();
+  server.listen();
+})()
