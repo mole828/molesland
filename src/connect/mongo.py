@@ -1,13 +1,13 @@
 from motor.motor_asyncio import AsyncIOMotorClient
-from pymongo.mongo_client import MongoClient
+from motor.core import AgnosticClient
 uri = "mongodb://localhost:27017"
 
-client: MongoClient = AsyncIOMotorClient(uri)
-
+client: AgnosticClient = AsyncIOMotorClient(uri)
 
 
 async def __main():
     print('database_names:',await client.list_database_names())
+    
 
 if __name__ == '__main__':
     import asyncio
