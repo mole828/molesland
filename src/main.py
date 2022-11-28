@@ -8,7 +8,8 @@ app.include_router(gachaRouter(client.get_database('moles')), prefix='/ark')
 
 @app.on_event('startup')
 def test():
-    logging.getLogger('fastapi').info('app on startup')
+    from loguru import logger
+    logger.info('app startup')
 
 @app.get('/')
 def _():
