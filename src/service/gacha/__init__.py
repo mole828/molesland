@@ -1,4 +1,3 @@
-import logging
 from typing import Dict, List
 from motor.core import Database
 

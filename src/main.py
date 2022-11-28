@@ -1,4 +1,3 @@
-import logging
 import fastapi
 app = fastapi.FastAPI()
 from connect.mongo import client
