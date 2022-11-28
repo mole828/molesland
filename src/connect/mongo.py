@@ -1,6 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 from motor.core import AgnosticClient
-uri = "mongodb://localhost:27017"
+uri = "mongodb://moleserver:27017"
 
 client: AgnosticClient = AsyncIOMotorClient(uri)
 

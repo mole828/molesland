@@ -16,4 +16,4 @@ def _():
 
 if __name__ == '__main__':
     import uvicorn
-    uvicorn.run(app=app, port=8080, access_log=False)
+    uvicorn.run(app)
